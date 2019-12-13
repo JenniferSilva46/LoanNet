@@ -1,0 +1,76 @@
+* 
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+body 
+{
+    width: 100%;
+    height: 100%;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+#todo
+{
+    display: flex;
+    flex-direction: row;
+    margin: 40px auto;
+}
+#icone_seta i
+{
+    font-size: 35px;
+    margin: 18px;
+    color: #B8977E;
+}
+#card
+{
+    background-color: #D7CEC7;
+    margin: 12px auto;
+    width: 100vh;
+    height: 85vh;
+    align-items: center;
+    /*border: solid 1px #c91919;*/
+    border-radius: 15px;
+} 
+form
+{
+    text-align: center;
+    margin: 22px auto;
+}
+label, #botao
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+    font-size: 19px;
+}
+input
+{
+    margin: 7px;
+    font-size: 15px;
+    text-align: center;
+    border: 5px;
+    background-color: #F5F5F5;
+}
+button
+{
+    color: rgb(255, 255, 255);
+    background-color: #76323F;
+    width: 15vh;
+    height: 5vh;
+    border-radius: 7px;
+}
+h1
+{
+    color: #76323F;
+}
+#login
+{
+    font-size: 22px;
+    text-decoration: underline;
+}
