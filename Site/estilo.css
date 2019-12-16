@@ -71,6 +71,26 @@ h1
 }
 #login
 {
-    font-size: 22px;
+    font-size: 15px;
     text-decoration: underline;
+}
+
+/*login)*/
+#cardLogin
+{
+    background-color: #D7CEC7;
+    margin: 12px auto;
+    width: 80vh;
+    height: 85vh;
+    align-items: center;
+    /*border: solid 1px #c91919;*/
+    border-radius: 15px;
+}
+
+#formLogin{
+    padding-top: 100px;
+}
+
+#bLogin{
+    margin-top: 35px;
 }

@@ -1,6 +1,15 @@
+bLogin.onclick= function che(){
+    var emailc= emailogin.value;
+    var senhac= senhalogin.value;
+    if(emailc==""){
+        alert("Email obrigatóorio!");
+    }
+    if(senhac==""){
+        alert("Senha obrigatória!");
+    }
+}
 
 var cont=0;
-
 botao.onclick = function()
 {
     var dig_nome= nome.value;
@@ -31,3 +40,21 @@ botao.onclick = function()
         alert("Cadastro realizado com sucesso!");
     }
 }
+
+/*login
+var conta=0;
+
+bLogin.onclick= function(){
+    alert("Olá");
+    var emailc= emailogin.value;
+    var senhac= senhalogin.value;
+    if(emailc==""){
+        alert("Email obrigatóorio!");
+        conta++;
+    }
+    if(senhac==""){
+        alert("Senha obrigatória!");
+        conta++
+    }
+    alert("Hello");
+}*/
