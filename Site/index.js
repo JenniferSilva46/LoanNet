@@ -1,4 +1,6 @@
-bLogin.onclick= function che(){
+if(document.getElementById("bLogin") !== null){
+    document.getElementById("bLogin").addEventListener("click",
+    function che(){
     var emailc= emailogin.value;
     var senhac= senhalogin.value;
     if(emailc==""){
@@ -7,8 +9,8 @@ bLogin.onclick= function che(){
     if(senhac==""){
         alert("Senha obrigatória!");
     }
+})
 }
-
 var cont=0;
 botao.onclick = function()
 {

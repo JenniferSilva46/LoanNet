@@ -57,13 +57,14 @@ input
     border: 5px;
     background-color: #F5F5F5;
 }
-button
+#cBotao
 {
     color: rgb(255, 255, 255);
     background-color: #76323F;
     width: 15vh;
     height: 5vh;
     border-radius: 7px;
+    margin: 22px auto;
 }
 h1
 {
