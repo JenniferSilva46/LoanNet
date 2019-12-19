@@ -158,12 +158,12 @@ h1
     }
     #icone_seta_resp
     {
-        margin-left: 100px;
-        margin-top: 20px;
+        margin-left: -16px;
+        margin-top: 19px;
         display: block;
-        width: 26%;
+        width: 90%;
         position: fixed;
-        top: 84%;
+        top: 92%;
         z-index: 200;
         display: flex;
         flex-direction: row;
@@ -174,7 +174,10 @@ h1
         font-size: 26px;
         color: #B8977E;
     }
-
+    #icone_seta_resp
+    {
+        background-color: #D7CEC7;
+    }
     #todo
 {
     margin: 10px auto;
