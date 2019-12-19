@@ -65,12 +65,16 @@ label, #botao
 margin: 30px auto;
 font-size: 19px;
 }
+
 /*Largura da tela de login*/
+
 .campLogin
 {
-margin: 14px auto;
-font-size: 23px;
+    margin: 5px auto;
+    margin-top: 20px;
+    font-size: 19px;
 }
+
 input
 {
     margin: 7px;
@@ -116,15 +120,16 @@ h1
 #cardLogin
 {
     background-color: #D7CEC7;
-    margin: 12px auto;
-    width: 50vh;
-    height: 69vh;
+    margin: 52px auto;
+    width: 60vh;
+    height: 72vh;
     align-items: center;
     border-radius: 15px;
 }
 
-#formLogin{
-    padding-top: 30px;
+#formLogin
+{
+    padding-top: 43px;
     margin: 29px;
 }
 
@@ -132,9 +137,11 @@ h1
 {
     margin: 42px auto;
 }
+
 #bLogin{
     margin-top: 35px;
 }
+<<<<<<< HEAD
 /*RESPONSIVO*/
 @media all and (min-width: 1px) and (max-width: 768px)
 {
@@ -182,4 +189,10 @@ h1
         width: 89%;
         height: 85%;
     }
+=======
+
+.titleLogin
+{
+    margin-bottom: 30px;;
+>>>>>>> eefb1126fbd637a410f2c8bf95aaed68c65cf9b8
 }
