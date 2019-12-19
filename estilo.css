@@ -68,9 +68,11 @@ font-size: 19px;
 /*Largura da tela de login*/
 .campLogin
 {
-margin: 14px auto;
+margin: 3px auto;
+margin-top: 20px;
 font-size: 23px;
 }
+
 input
 {
     margin: 7px;
@@ -117,14 +119,15 @@ h1
 {
     background-color: #D7CEC7;
     margin: 12px auto;
-    width: 50vh;
-    height: 69vh;
+    margin-top: 52px;
+    width: 60vh;
+    height: 72vh;
     align-items: center;
     border-radius: 15px;
 }
 
 #formLogin{
-    padding-top: 30px;
+    padding-top: 50px;
     margin: 29px;
 }
 
@@ -135,7 +138,13 @@ h1
 #bLogin{
     margin-top: 35px;
 }
-/*RESPONSIVO*/
+
+.titleLogin
+{
+    margin-bottom: 30px;;
+}
+
+/*RESPONSIVO
 @media all and (min-width: 1px) and (max-width: 768px)
 {
     #icone_seta
