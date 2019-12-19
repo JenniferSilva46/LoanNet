@@ -9,28 +9,32 @@ body
     width: 100%;
     height: 100%;
 }
+
 a
 {
     text-decoration: none;
     color: black;
 }
+
 #todo
 {
     display: flex;
     flex-direction: row;
     margin: 40px auto;
 }
+
 #icone_seta i
 {
     font-size: 35px;
     margin: 18px;
     color: #B8977E;
 }
+/*card do formulario cadastro/login*/
 #card
 {
     background-color: #D7CEC7;
     margin: 12px auto;
-    width: 100vh;
+    width: 75vh;
     height: 85vh;
     align-items: center;
     /*border: solid 1px #c91919;*/
@@ -39,6 +43,9 @@ a
 form
 {
     text-align: center;
+}
+#formCadas
+{
     margin: 22px auto;
 }
 label, #botao
@@ -46,8 +53,19 @@ label, #botao
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 30px auto;
-    font-size: 19px;
+}
+
+/*Largura da tela de cadastro*/
+.campFor, #botao
+{
+margin: 30px auto;
+font-size: 19px;
+}
+/*Largura da tela de login*/
+.campLogin
+{
+margin: 14px auto;
+font-size: 23px;
 }
 input
 {
@@ -56,8 +74,14 @@ input
     text-align: center;
     border: 5px;
     background-color: #F5F5F5;
+    outline: none;
+    border-radius: 3px;
+    border: solid 2px #aeaeae;
 }
-#cBotao
+input:focus{
+    border: solid 2px #B8977E ;
+}
+#bLogin, #botao
 {
     color: rgb(255, 255, 255);
     background-color: #76323F;
@@ -66,14 +90,22 @@ input
     border-radius: 7px;
     margin: 22px auto;
 }
+
 h1
 {
     color: #76323F;
+    font-size: 38px;
 }
+/*hiperlink direcionado para a tela de login*/
 #login
 {
-    font-size: 15px;
+    font-size: 20px;
+    text-decoration: none;
+}
+#login:hover
+{
     text-decoration: underline;
+    color: #B8977E;
 }
 
 /*login)*/
@@ -81,17 +113,21 @@ h1
 {
     background-color: #D7CEC7;
     margin: 12px auto;
-    width: 80vh;
-    height: 85vh;
+    width: 50vh;
+    height: 69vh;
     align-items: center;
-    /*border: solid 1px #c91919;*/
     border-radius: 15px;
 }
 
 #formLogin{
-    padding-top: 100px;
+    padding-top: 30px;
+    margin: 29px;
 }
 
+#formCadas
+{
+    margin: 42px auto;
+}
 #bLogin{
     margin-top: 35px;
 }

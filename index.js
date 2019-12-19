@@ -9,7 +9,9 @@ if(document.getElementById("bLogin") !== null){
     if(senhac==""){
         alert("Senha obrigatória!");
     }
-})
+}
+
+    )
 }
 var cont=0;
 botao.onclick = function()
@@ -39,24 +41,6 @@ botao.onclick = function()
         cont++;
     }
     if(cont==0){
-        alert("Cadastro realizado com sucesso!");
+        alert("Cadastro realizado com sucesso! \n\n Faça seu login!");        
     }
 }
-
-/*login
-var conta=0;
-
-bLogin.onclick= function(){
-    alert("Olá");
-    var emailc= emailogin.value;
-    var senhac= senhalogin.value;
-    if(emailc==""){
-        alert("Email obrigatóorio!");
-        conta++;
-    }
-    if(senhac==""){
-        alert("Senha obrigatória!");
-        conta++
-    }
-    alert("Hello");
-}*/
