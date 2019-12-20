@@ -144,6 +144,7 @@ h1
     margin-bottom: 30px;;
 }
 
+
 /*RESPONSIVO*/
 @media all and (min-width: 1px) and (max-width: 768px)
 {
@@ -196,5 +197,49 @@ h1
     {
         width: 89%;
         height: 85%;
+    }
+}
+
+/*login*/
+@media all and (min-width: 768px) and (max-width: 1024px){
+
+    #cardLogin{
+        margin-top: 80px;
+    }
+
+    #formLogin{
+        padding-top: 100px;
+    }
+
+    .titleLogin{
+        font-size: 70px;
+    }
+
+    .inputlogin{
+        width: 60%;
+        height: 100%;
+    }
+
+    #campLogin{
+        margin: 15px auto;
+        margin-top: 30px;
+    }
+
+    label.campLogin{
+        font-size: 33px;
+    }
+}
+
+@media all and (min-width: 360px) and (max-width: 640px){
+    #formLogin{
+        padding-top: 30px;
+    }
+
+    .contanier{
+        padding: 20px;
+    }
+
+    #cadastro{
+        font-size: 15px;
     }
 }
