@@ -144,6 +144,11 @@ h1
     margin-bottom: 30px;;
 }
 
+#icone_seta_resp_login
+{
+    display: none;
+}
+
 
 /*RESPONSIVO*/
 @media all and (min-width: 1px) and (max-width: 768px)
@@ -200,8 +205,12 @@ h1
     }
 }
 
-/*login*/
+/*login -> tablet*/
 @media all and (min-width: 768px) and (max-width: 1024px){
+    #icone_seta
+    {
+        display: none;
+    }
 
     #cardLogin{
         margin-top: 80px;
@@ -228,18 +237,62 @@ h1
     label.campLogin{
         font-size: 33px;
     }
+
+    #icone_seta_resp_login
+    {
+        margin-left: -14px;
+        margin-top: 300px;
+        display: block;
+        width: 78%;
+        position: fixed;
+        top: 59%;
+        z-index: 200;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #D7CEC7;
+    }
 }
 
+/*login -> celular*/
 @media all and (min-width: 360px) and (max-width: 640px){
+
+    #icone_seta
+    {
+        display: none;
+    }
+    
     #formLogin{
-        padding-top: 30px;
+        padding-top: 5px;
     }
 
     .contanier{
-        padding: 20px;
+        padding: 0px;
     }
 
     #cadastro{
         font-size: 15px;
     }
+    #cardLogin
+{
+    margin: 12px auto;
+    margin-top: 52px;
+    width: 90%;
+    height: 60vh;
+}
+    #icone_seta_resp_login
+    {
+        margin-left: -14px;
+        margin-top: 200px;
+        display: block;
+        width: 86%;
+        position: fixed;
+        top: 59%;
+        z-index: 200;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #D7CEC7;
+    }
+
 }
