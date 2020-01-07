@@ -1,0 +1,178 @@
+* 
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+body
+{
+   width: 100%;
+    height: 100%;
+}
+
+ul 
+{
+    list-style: none;
+}
+
+a
+{
+   text-decoration: none;
+   color: #76323F;
+}
+
+#menu
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+}
+#logo img
+{
+    width: 100px;
+    height: 100px;
+    margin: 1px;
+}
+
+#campo_menu
+{
+    background-color: #D7CEC7;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 20px 20px;
+    width: 900px;
+    height: 8vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+nav ul
+{
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul a
+{
+    display: flex;
+    flex-direction: row;
+    margin: 14px;
+    width: 8vw;
+}
+
+nav li
+{
+    font-size: 13px;
+}
+
+/*
+COR NO CAMPO DA PAGINA CONTATO
+*/
+
+nav #menu_contato
+{
+    background-color: #76323F;
+    height: 45px;
+    padding: -1px;
+    width: 15%;
+}
+#menu_contato a
+{
+    color: white;
+}
+
+#txtbusca 
+{
+    border-radius: 5px;
+    border: solid 1px #B8977E;
+    outline: none;
+    background:#EEE;
+    width:180px;
+    height:23px;
+    margin:0 auto;
+    padding:3px 0 3px 3px;
+    float:left; /* posição do campo*/
+    line-height:36px; /* altura da linha*/
+    color: #76323F;
+}
+
+#txtbusca:focus{
+    border: solid 1px #76323F ;
+    background: white;
+}
+
+#btnBusca {
+    background:#D7CEC7;
+    position:relative;
+    border:0px solid #222;
+    color:#76323F; 
+    margin:0 auto;
+    padding:10px;
+    font-size:10px;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+#btnBusca:hover 
+{
+color: black; 
+}
+
+#card
+{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+#contatos
+{
+   background-color: #D7CEC7;
+   width: 30%;
+   height: 100%;
+   text-align-last: center;
+   margin: 5px 20px;
+   border-radius: 5px;
+}
+
+#contatos h1
+{
+    margin: 10px;
+}
+.form_contato
+{
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form_contato p, a
+{
+    display: flex;
+    margin: 0px 2px;    
+}
+
+.form_contato a
+{
+    color: black;
+}
+
+.form_contato p, h1
+{
+color: #76323F;
+}
