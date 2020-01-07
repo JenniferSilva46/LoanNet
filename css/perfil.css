@@ -78,6 +78,7 @@ nav li
 /*
 COR NO CAMPO DA PAGINA MEU PERFIL
 */
+
 nav #menu_perfil 
 {
     background-color: #76323F;
@@ -126,19 +127,21 @@ nav #menu_perfil
 {
 color: black; 
 }
-
+/*
+DADOS DO USUÁRIO
+*/
 #dados
 {
-    background-color: #D7CEC7;
     display: flex;
     flex-direction: column;
-    width: 50%;
-    height: 30vh;
+    align-items: center;
+    width: 100%;
+    height: 35vh;
 }
 
 #formulario_dados
 {
-    background: #aeaeae;
+    background:#D7CEC7;
     display: flex;
     flex-direction: column;
     justify-content: center;
