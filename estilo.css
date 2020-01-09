@@ -149,7 +149,99 @@ h1
     display: none;
 }
 
+/*CSS EXCLUSIVOS DA PÁGINA DE CADASTRO DE LIVROS */
 
+#imagem
+{
+    margin-left: auto;
+    margin-right: auto;
+    height: 110px;
+    width: 115px;
+}
+#h1cbiblioteca
+{
+    margin-top: 15px;
+}
+#cardcadastrolivro
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #D7CEC7;
+    margin: 12px auto;
+    width: 135vh;
+    height: 97vh;
+    align-items: center;
+    border-radius: 15px;
+} 
+#esquerda
+{
+    margin-right: 35px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+} 
+#direita
+{
+    margin-top: 85px;
+    display: flex;
+    flex-direction: column;
+} 
+#genero
+{
+    width: 225px;
+}
+#formcadastrolivro
+{
+    display: flex;
+    text-align: center;
+    margin: 22px auto;
+}
+.campos, #btn
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    font-size: 19px;
+}
+#btn
+{
+    margin-top: 5px;
+    cursor: pointer;
+    margin-left: 250px;
+}
+#btn:hover{
+    background-color: #B8977E;
+
+}
+
+#pular
+{
+    margin-top: 50px;
+    margin-left: 150px;
+    font-size: 15px;
+    text-decoration: underline;
+}
+#seta{
+    height: 15px;
+    width: 20px;
+}
+#pular:hover{
+    color: #B8977E;
+}
+#campo{
+    height: 25px;
+    width: 300px;
+    
+}
+button
+{
+    color: rgb(255, 255, 255);
+    background-color: #76323F;
+    width: 15vh;
+    height: 5vh;
+    border-radius: 7px;
+}
 /*RESPONSIVO*/
 @media all and (min-width: 1px) and (max-width: 768px)
 {
