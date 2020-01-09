@@ -2,14 +2,26 @@ body{
     margin: 0;
 }
   
+.divHeader{
+    display: flex;
+    flex-direction: row;
+}
+
+.logoLOAN{
+  margin-top: 8px;
+  margin-left: 15px;
+}
+  
 .linkHeader{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    width: 100%;
+    padding-left: 70%;
 }
   
-.linkHeader a{
-    padding:20px;
+.cadastro, 
+.login{
+    padding-top: 20px;
     padding-left: 15px;
     padding-bottom: 0;
 }
@@ -18,22 +30,26 @@ body{
     list-style: none;
     padding-left: 80px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     background-color: #D7CEC7;
 }
     
 .linkMenu{
     display: block;
     color: #76323F;
-    padding: 15px 50px;
+    padding: 15px 30px;
 }
-    
-.linkMenu:link, .a:link{
+
+.linkMenu:link,
+.cadastro:link, 
+.login:link{
     text-decoration: none;
     color: #76323F;
 }
   
-.linMenu:visited, .a:visited{
+.linMenu:visited,
+.cadastro:visited, 
+.login:visited{
     color: #76323F;
 }
    
@@ -46,8 +62,8 @@ body{
   
 #busca{
     padding-top: 1%;
-    margin-left: 30%;
-    position: relative;
+    margin-left: 22%;
+    padding-right: 2%;
 }
   
 #txtBusca{
@@ -186,17 +202,24 @@ body{
 /*TABLET*/
 @media all and (min-width: 768px) and (max-width: 1024px){
   
+    .linkHeader{
+        padding-left: 50%;
+    }
+
     #menuprincipal ul{
         padding-left: 40px;
     }
 
     .linkMenu{
-        padding: 15px 30px;
+        padding: 15px 10px;
     }
   
     #busca{
+        padding-top: 2%;
         margin-left: 5%;
+        position: relative;
     }
+    
     #txtBusca{
         width: 150px;  
         height: 20px;
