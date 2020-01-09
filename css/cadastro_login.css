@@ -1,0 +1,298 @@
+* 
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+body 
+{
+    width: 100%;
+    height: 100%;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+#todo
+{
+    display: flex;
+    flex-direction: row;
+    margin: 40px auto;
+}
+
+#icone_seta i
+{
+    font-size: 35px;
+    margin: 18px;
+    color: #B8977E;
+}
+/*Sumir o icone responsivo*/
+#icone_seta_resp
+{
+    display: none;
+}
+/*card do formulario cadastro/login*/
+#card
+{
+    background-color: #D7CEC7;
+    margin: 12px auto;
+    width: 75vh;
+    height: 85vh;
+    align-items: center;
+    border-radius: 15px;
+} 
+form
+{
+    text-align: center;
+}
+#formCadas
+{
+    margin: 22px auto;
+}
+label, #botao
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Largura da tela de cadastro*/
+.campFor, #botao
+{
+margin: 30px auto;
+font-size: 19px;
+}
+/*Largura da tela de login*/
+.campLogin
+{
+margin: 3px auto;
+margin-top: 20px;
+font-size: 23px;
+}
+
+input
+{
+    margin: 7px;
+    font-size: 15px;
+    text-align: center;
+    border: 5px;
+    background-color: #F5F5F5;
+    outline: none;
+    border-radius: 3px;
+    border: solid 2px #aeaeae;
+}
+input:focus{
+    border: solid 2px #B8977E ;
+}
+#bLogin, #botao
+{
+    color: rgb(255, 255, 255);
+    background-color: #76323F;
+    width: 15vh;
+    height: 5vh;
+    border-radius: 7px;
+    margin: 22px auto;
+}
+
+h1
+{
+    color: #76323F;
+    font-size: 38px;
+}
+/*hiperlink direcionado para a tela de login*/
+#login
+{
+    font-size: 20px;
+    text-decoration: none;
+}
+#login:hover
+{
+    text-decoration: underline;
+    color: #B8977E;
+}
+
+/*login)*/
+#cardLogin
+{
+    background-color: #D7CEC7;
+    margin: 12px auto;
+    margin-top: 52px;
+    width: 60vh;
+    height: 72vh;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#formLogin{
+    padding-top: 50px;
+    margin: 29px;
+}
+
+#formCadas
+{
+    margin: 42px auto;
+}
+#bLogin{
+    margin-top: 35px;
+}
+
+.titleLogin
+{
+    margin-bottom: 30px;;
+}
+
+#icone_seta_resp_login
+{
+    display: none;
+}
+
+
+/*RESPONSIVO*/
+@media all and (min-width: 1px) and (max-width: 768px)
+{
+    #icone_seta
+    {
+        display: none;
+    }
+    #card
+    {
+        height: 700px;
+        width: 90%;
+    }
+    #icone_seta_resp
+    {
+        margin-left: -16px;
+        margin-top: 19px;
+        display: block;
+        width: 90%;
+        position: fixed;
+        top: 92%;
+        z-index: 200;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #icone_seta_resp, i, a
+    {
+        font-size: 26px;
+        color: #B8977E;
+    }
+    #icone_seta_resp
+    {
+        background-color: #D7CEC7;
+    }
+    #todo
+{
+    margin: 10px auto;
+}
+    .campFor
+    {
+        width: 61%;
+        margin: 32px auto;
+    }
+    #formCadas
+    {
+        width: 90%;
+        height: 90%;
+    }
+    input
+    {
+        width: 89%;
+        height: 85%;
+    }
+}
+
+/*login -> tablet*/
+@media all and (min-width: 768px) and (max-width: 1024px){
+    #icone_seta
+    {
+        display: none;
+    }
+
+    #cardLogin{
+        margin-top: 80px;
+    }
+
+    #formLogin{
+        padding-top: 100px;
+    }
+
+    .titleLogin{
+        font-size: 70px;
+    }
+
+    .inputlogin{
+        width: 60%;
+        height: 100%;
+    }
+
+    #campLogin{
+        margin: 15px auto;
+        margin-top: 30px;
+    }
+
+    label.campLogin{
+        font-size: 33px;
+    }
+
+    #icone_seta_resp_login
+    {
+        margin-left: -14px;
+        margin-top: 300px;
+        display: block;
+        width: 78%;
+        position: fixed;
+        top: 59%;
+        z-index: 200;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #D7CEC7;
+    }
+}
+
+/*login -> celular*/
+@media all and (min-width: 360px) and (max-width: 640px){
+
+    #icone_seta
+    {
+        display: none;
+    }
+    
+    #formLogin{
+        padding-top: 5px;
+    }
+
+    .contanier{
+        padding: 0px;
+    }
+
+    #cadastro{
+        font-size: 15px;
+    }
+    #cardLogin
+{
+    margin: 12px auto;
+    margin-top: 52px;
+    width: 90%;
+    height: 60vh;
+}
+    #icone_seta_resp_login
+    {
+        margin-left: -14px;
+        margin-top: 200px;
+        display: block;
+        width: 86%;
+        position: fixed;
+        top: 59%;
+        z-index: 200;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #D7CEC7;
+    }
+
+}
