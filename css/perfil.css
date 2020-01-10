@@ -253,7 +253,7 @@ input:hover
 .modificar_dados
 {
     display: flex;
-    margin: 10px;
+    margin: 10px 0px;
 }
 .modificar_dados a
 {
