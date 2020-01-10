@@ -20,7 +20,82 @@ a
    text-decoration: none;
    color: #76323F;
 }
+.divHeader{
+    display: flex;
+    flex-direction: row;
+}
 
+.logoLOAN{
+  margin-top: 8px;
+  margin-left: 15px;
+}
+  
+.linkHeader{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 70%;
+}
+  
+#menuprincipal ul{
+    list-style: none;
+    padding-left: 80px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #D7CEC7;
+}
+    
+.linkMenu{
+    display: block;
+    color: #76323F;
+    padding: 15px 30px;
+}
+
+.linkMenu:link,
+.cadastro:link, 
+.login:link{
+    text-decoration: none;
+    color: #76323F;
+}
+  
+.linMenu:visited,
+.cadastro:visited, 
+.login:visited{
+    color: #76323F;
+}
+   
+ #linkPerfil{
+    color:  white ;
+    background-color: #76323F;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+  
+#busca{
+    padding-top: 1%;
+    margin-left: 22%;
+    padding-right: 2%;
+}
+  
+#txtBusca{
+    border: 1px solid #76323F;
+    border-radius: 5px;
+    height: 20px;
+}
+  
+#botao{
+    background-color: transparent;
+    border: none;
+    color: #76323F;
+}
+  
+#botao:hover{
+    background-color: #76323F;
+    border: none;
+    color: #D7CEC7;
+}
+
+/*
 #menu
 {
     display: flex;
@@ -78,7 +153,7 @@ nav li
 /*
 COR NO CAMPO DA PAGINA MEU PERFIL
 */
-
+/*
 nav #menu_perfil 
 {
     background-color: #76323F;
@@ -102,10 +177,10 @@ nav #menu_perfil
     margin:0 auto;
     padding:3px 0 3px 3px;
     float:left; /* posição do campo*/
-    line-height:36px; /* altura da linha*/
-    color: #76323F;
+/*  line-height:36px; /* altura da linha*/
+/*  color: #76323F;
 }
-
+/*
 #txtbusca:focus{
     border: solid 1px #76323F ;
     background: white;
@@ -130,34 +205,92 @@ color: black;
 /*
 DADOS DO USUÁRIO
 */
+
 #dados
 {
+    background-color: #D7CEC7;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10px 0px;
     width: 100%;
-    height: 35vh;
+    height: 45vh;
 }
 
+#dados h1
+{
+    color: #76323F;
+}
 #formulario_dados
 {
-    background:#D7CEC7;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 80%;
     height: 100%;
-    
+    margin: 15px 0px;
 }
-input
+
+input 
+{
+    color: #aeaeae;
+}
+
+input:hover
+{
+    color: #000000;
+}
+
+#dados .linha 
+{
+    background-color: #76323F;
+    width:  100%;
+    height: 2px;
+    margin: 1px auto;
+}
+
+.modificar_dados
 {
     display: flex;
+    margin: 10px;
+}
+.modificar_dados a
+{
+    margin: 5px;
+}
+#nome 
+{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0px;
+}
+#senha
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#mudar_senha
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 25px;
+}
+
+#campo_senha
+{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 15px;
+}
+
+#formulario_dados input
+{
     margin: 0px;
     font-size: 15px;
     text-align: center;
     border: 5px;
-    background-color: #F5F5F5;
     outline: none;
     border-radius: 3px;
     border: solid 1px #aeaeae;
@@ -166,6 +299,13 @@ input
 input:focus{
     border: solid 1px #B8977E ;
 }
+
+#botoes_confirmar a
+{
+    display: flex;
+    margin: 15px 25px;
+}
+
 #acervo
 {
     background-color: #B8977E;

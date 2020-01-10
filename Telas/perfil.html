@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,53 +8,71 @@
     <title>Perfil do Usuário</title>
 </head>
 <body>
-    <div id="menu">
-        <div id="logo">
-            <img src="/fotos/plogo.jpeg" alt="logo">
-        </div>    
-        <div id="campo_menu">
-            
-            <nav>
+    <header>
+        <div class="divHeader">
+            <img src="/fotos/logo-1.png" alt="" width="140" class="logoLOAN">
+            <div class="linkHeader"> 
+            </div>
+        </div>
+    </header>
+    <main>
+        <aside>
+            <nav id="menuprincipal">
                 <ul>
-                    <li id="menu_home">
-                        <a href="/home.html">HOME</a>
-                    </li>
-                    <li id="menu_livros">
-                        <a href="#">LIVROS</a>
-                    </li>
-                    <li id="menu_perfil">
-                        <a href="../Telas/perfil.html">MEU PERFIL</a>
-                    </li>
-                    <li id="menu_sobre">
-                        <a href="#">SOBRE</a>
-                    </li>
-                    <li id="menu_contato">
-                        <a href="../Telas/contato.html">CONTATO</a>
+                    <li> <a href="/homePerfil.html" id="linkHome" class="linkMenu">HOME</a> </li>
+                    <li> <a href="#" class="linkMenu">LIVROS</a> </li>
+                    <li> <a href="/Telas/perfil.html" id="linkPerfil" class="linkMenu">MEU PERFIL</a> </li>
+                    <li> <a href="#" class="linkMenu">SOBRE</a> </li>
+                    <li> <a href="/Telas/contato.html" class="linkMenu">CONTATOS</a> </li>
+                    <li id="busca">
+                        <input type="text" id="txtBusca"/>
+                        <button id="botao">Buscar</button>
                     </li>
                 </ul>
             </nav>
-            <div id='busca'>
-                <form action="/search" class="search" method="get">
-                    <input id="txtbusca" name="q" type="text" value="" placeholder="Busque um livro..." />
-                    <input id="btnBusca" type="submit" value="Buscar"/>
-                </form>
-            </div>
-        </div>
-    </div>
+        </aside>
+
+
+        <!--DADOS DO USUÁRIO-->
     <div id="dados">
+       
         <form action="" id="formulario_dados">
-            <h1>Seus Dados </h1>
-            <input id="nome_usuario" type="text" value="Seu nome..."> 
-                <button id="editar_email">Atualizar</button>
-            <input id="editar_nome" type="email" value="seu_email@gmail.com">
-                <button id="email_usuario">Atualizar</button>
-            <input id="editar_senha" type="password">
-            <input id="modificar_conta" type="button" value="Confirmar Atualização">           
-            <input id="apagar_conta" type="button" value="Apagar Conta">
+             <h1>Minha Conta</h1>
+            <div class="linha">
+
+            </div>
+            <div class="modificar_dados" id="nome">
+                <input id="nome_usuario" type="text" value="Seu nome..."> 
+                    <a href="#" id="editar_nome">Salvar Nome</a>
+            </div>
+            <div class="modificar_dados">
+                <input type="email" value="seu_email@gmail.com">
+            </div>
+            <div class="modificar_dados">
+                <div id="senha">
+                    <input id="editar_senha" type="password" value="Sua_senha...">
+                        <a href="#">Mudar senha</a>
+                </div>
+                <div id="mudar_senha">
+                    <input type="password">
+                    <div id="campo_senha">
+                        <a href="#" class="senha" id="nova_senha">Salvar Senha</a>
+                        <a href="#" class="senha" id="cancelar_senha">Cancelar</a>
+                    </div>
+                </div>
+            </div>
+            <div id="botoes_confirmar">
+                <a href="#">Confirmar Atualização</a>
+                <a href="#">Apagar Conta</a>
+            </div>
         </form>
     </div>
+
+
+
+
     <div id="acervo">
-        
+        <a href="#"><h1> Cadastre seu livro</h1></a>
     </div>
 </body>
 </html>
