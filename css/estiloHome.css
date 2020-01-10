@@ -195,7 +195,50 @@ body{
     from {opacity: .4} 
     to {opacity: 1}
 }
-  
+/*SOBRE*/
+.sobre{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo{
+    margin-top: 3%;
+    text-align: center;
+    font-size: 25px;
+    color: #76323F;
+}
+.paragrafo{
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.5;
+    padding-right: 15px;
+    text-indent: 5%;
+    margin-top: 2%;
+    margin-right: 7%;
+    margin-left: 7%;
+}
+.sobreosite{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1050px;
+    border-radius: 15px;
+    background-color: #D7CEC7;
+}
+.sobrealogo{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1050px;
+    border-radius: 15px;
+    background-color: #D7CEC7;
+}
+.logoloan{
+    height: 500px;
+    width: 500px;
+}
 /*TABLET*/
 @media all and (min-width: 768px) and (max-width: 1024px){
   
