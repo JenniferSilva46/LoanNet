@@ -61,9 +61,11 @@ body{
 }
   
 #busca{
+    display: flex;
+    flex-direction: row;
     padding-top: 1%;
-    margin-left: 22%;
-    padding-right: 2%;
+    margin-left: 20%;
+    padding-right: 3%;
 }
   
 #txtBusca{
@@ -76,15 +78,10 @@ body{
     background-color: transparent;
     border: none;
     color: #76323F;
-}
-  
-#botao:hover{
-    background-color: #76323F;
-    border: none;
-    color: #D7CEC7;
+    margin-bottom: 12px;
 }
 
-  /*---------------------------------------SLIDE SHOW*/
+/*---------------------------------------SLIDE SHOW*/
   
 .Slides {
     display: none;
@@ -106,7 +103,7 @@ body{
     margin-bottom: 0;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 3px 0px  rgba(0,0,0,0.3); 
-    position: ;
+    position: relative;
 }
   
 .texto{
