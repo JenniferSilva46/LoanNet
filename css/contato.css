@@ -20,114 +20,81 @@ a
    text-decoration: none;
    color: #76323F;
 }
-
-#menu
-{
+.divHeader{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+}
+
+.logoLOAN{
+  margin-top: 8px;
+  margin-left: 15px;
+}
+  
+.linkHeader{
+    display: flex;
+    flex-direction: row;
     width: 100%;
+    padding-left: 70%;
 }
-
-#logo
-{
+  
+#menuprincipal ul{
+    list-style: none;
+    padding-left: 80px;
     display: flex;
-    flex-direction: column;
-    width: 10%;
-}
-#logo img
-{
-    width: 100px;
-    height: 100px;
-    margin: 1px;
-}
-
-#campo_menu
-{
+    justify-content: space-around;
     background-color: #D7CEC7;
-    display: flex;
-    flex-direction: row;
-    margin: 20px 20px 20px;
-    width: 950px;
-    height: 8vh;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
+}
+    
+.linkMenu{
+    display: block;
+    color: #76323F;
+    padding: 15px 30px;
 }
 
-nav ul
-{
-    display: flex;
-    flex-direction: row;
-}
-
-nav ul a
-{
-    display: flex;
-    flex-direction: row;
-    margin: 14px;
-    width: 8vw;
-}
-
-nav li
-{
-    font-size: 13px;
-}
-
-/*
-COR NO CAMPO DA PAGINA CONTATO
-*/
-
-nav #menu_contato
-{
-    background-color: #76323F;
-    height: 45px;
-    padding: -1px;
-    width: 15%;
-}
-#menu_contato a
-{
-    color: white;
-}
-
-#txtbusca 
-{
-    border-radius: 5px;
-    border: solid 1px #B8977E;
-    outline: none;
-    background:#EEE;
-    width:180px;
-    height:23px;
-    margin:0 auto;
-    padding:3px 0 3px 3px;
-    float:left; /* posição do campo*/
-    line-height:36px; /* altura da linha*/
+.linkMenu:link,
+.cadastro:link, 
+.login:link{
+    text-decoration: none;
     color: #76323F;
 }
-
-#txtbusca:focus{
-    border: solid 1px #76323F ;
-    background: white;
+  
+.linMenu:visited,
+.cadastro:visited, 
+.login:visited{
+    color: #76323F;
 }
-
-#btnBusca {
-    background:#D7CEC7;
-    position:relative;
-    border:0px solid #222;
-    color:#76323F; 
-    margin:0 auto;
-    padding:10px;
-    font-size:10px;
-    font-weight:bold;
-    text-transform:uppercase;
+   
+ #linkContato{
+    color:  white ;
+    background-color: #76323F;
+    padding-left: 20px;
+    padding-right: 20px;
 }
-
-#btnBusca:hover 
-{
-color: black; 
+  
+#busca{
+    padding-top: 1%;
+    margin-left: 22%;
+    padding-right: 2%;
 }
-
+  
+#txtBusca{
+    border: 1px solid #76323F;
+    border-radius: 5px;
+    height: 20px;
+}
+  
+#botao{
+    background-color: transparent;
+    border: none;
+    color: #76323F;
+}
+  
+#botao:hover{
+    background-color: #76323F;
+    border: none;
+    color: #D7CEC7;
+}
+/* CONTATO */
 #card
 {
     height: 70vh;
@@ -136,7 +103,7 @@ color: black;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
+    margin: 30px 0px;
 }
 
 #contatos
@@ -155,7 +122,7 @@ color: black;
 }
 .form_contato
 {
-    margin: 15px;
+    margin: 25px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -175,4 +142,13 @@ color: black;
 .form_contato p, h1
 {
 color: #76323F;
+}
+
+.form_contato i
+{
+    margin: 0px 5px;
+}
+#card img
+{
+    width: 200px;
 }
