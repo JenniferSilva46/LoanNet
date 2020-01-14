@@ -95,116 +95,8 @@ a
     color: #D7CEC7;
 }
 
-/*
-#menu
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
 
-#logo
-{
-    display: flex;
-    flex-direction: column;
-    width: 10%;
-}
-#logo img
-{
-    width: 100px;
-    height: 100px;
-    margin: 1px;
-}
-
-#campo_menu
-{
-    background-color: #D7CEC7;
-    display: flex;
-    flex-direction: row;
-    margin: 20px 20px 20px;
-    width: 900px;
-    height: 8vh;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-}
-
-nav ul
-{
-    display: flex;
-    flex-direction: row;
-}
-
-nav ul a
-{
-    display: flex;
-    flex-direction: row;
-    margin: 14px;
-    width: 8vw;
-}
-
-nav li
-{
-    font-size: 13px;
-}
-
-/*
-COR NO CAMPO DA PAGINA MEU PERFIL
-*/
-/*
-nav #menu_perfil 
-{
-    background-color: #76323F;
-    height: 45px;
-    padding: -1px;
-    width: 17%;
-}
-#menu_perfil a
-{
-    color: white;
-}
-
-#txtbusca 
-{
-    border-radius: 5px;
-    border: solid 1px #B8977E;
-    outline: none;
-    background:#EEE;
-    width:180px;
-    height:23px;
-    margin:0 auto;
-    padding:3px 0 3px 3px;
-    float:left; /* posição do campo*/
-/*  line-height:36px; /* altura da linha*/
-/*  color: #76323F;
-}
-/*
-#txtbusca:focus{
-    border: solid 1px #76323F ;
-    background: white;
-}
-
-#btnBusca {
-    background:#D7CEC7;
-    position:relative;
-    border:0px solid #222;
-    color:#76323F; 
-    margin:0 auto;
-    padding:10px;
-    font-size:10px;
-    font-weight:bold;
-    text-transform:uppercase;
-}
-
-#btnBusca:hover 
-{
-color: black; 
-}
-/*
-DADOS DO USUÁRIO
-*/
+/* DADOS DO USUÁRIO */
 
 #dados
 {
@@ -212,7 +104,7 @@ DADOS DO USUÁRIO
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px 0px;
+    margin: 38px 0px;
     width: 100%;
     height: 45vh;
 }
@@ -259,11 +151,15 @@ input:hover
 {
     margin: 5px;
 }
+.modificar_dados a:hover
+{
+    color: #000000;
+}
 #nome 
 {
     display: flex;
     flex-direction: column;
-    margin: 15px 0px;
+    margin: 10px 0px;
 }
 #senha
 {
@@ -271,12 +167,17 @@ input:hover
     flex-direction: column;
 }
 
-#mudar_senha
+#nova_senha
 {
     display: flex;
     flex-direction: column;
     margin: 0px 25px;
 }
+#nova_senha a:hover
+{
+    color: #000000;
+}
+
 
 #campo_senha
 {
@@ -302,13 +203,159 @@ input:focus{
 
 #botoes_confirmar a
 {
-    display: flex;
     margin: 15px 25px;
+    align-items: center;
+    color: black;
+    font-style: italic;
+    font-weight: bold;
 }
 
+#botoes_confirmar a:hover
+{
+    background: #76323F;
+    color: white;
+
+}
+/*  ACERVOS DE LIVROS DO USUÁRIO */
 #acervo
 {
-    background-color: #B8977E;
+    background-color: #76323F;
     width: 100%;
-    height: 40vh;
+    height: 80vh;
+}
+
+#acervo h1
+{
+    display: flex;
+    flex-direction: column;
+    justify-items:center;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+h1 #linha
+{ 
+    background-color: #000000;
+    height: 2px;
+    width: 200px;
+}
+
+/*----SLIDE SHOW */
+.Slides {
+    display: none;
+}
+  
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+.imagens{
+    display: flex;
+    flex-direction: row;
+    background-color: #D7CEC7;
+    width: 980px;
+    height: 300px;
+    padding: 30px;
+    margin: 40px auto;
+    margin-bottom: 0;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 3px 0px  rgba(0,0,0,0.3); 
+    position: relative;
+}
+  
+.texto{
+    flex: 1;
+}
+  
+.título{
+    margin-top: 8%;
+    text-align: center;
+    font-size: 25px;
+    color: #76323F;
+}
+  
+.parágrafo{
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.5;
+    padding-right: 15px;
+    text-indent: 5%;
+    margin-right: 3%;
+    margin-left: 2%;
+}
+  
+.imgSlide{
+    margin-right: 5%;
+    width: 280px; 
+    margin-left: 3%;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 12px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+.prev{
+    margin-left: 12%;
+}
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    margin-right: 12%;
+}
+  
+.prev:hover, .next:hover {
+    color: #f2f2f2;
+    background-color: rgba(0,0,0,0.8);
+}
+  
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+/* Animação */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/*CADASTRO DE LIVROS*/
+#cadastro_livro a
+{
+    color: #B8977E;
 }

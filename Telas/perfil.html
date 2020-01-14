@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/perfil.css">
+    <script src="https://kit.fontawesome.com/e7ffe5bb97.js"></script>
     <title>Perfil do Usuário</title>
 </head>
 <body>
@@ -43,7 +44,7 @@
             </div>
             <div class="modificar_dados" id="nome">
                 <input id="nome_usuario" type="text" value="Seu nome..."> 
-                    <a href="#" id="editar_nome">Salvar Nome</a>
+                    <a href="#" id="editar_nome">Salvar novo nome</a>
             </div>
             <div class="modificar_dados">
                 <input type="email" value="seu_email@gmail.com">
@@ -51,28 +52,104 @@
             <div class="modificar_dados">
                 <div id="senha">
                     <input id="editar_senha" type="password" value="Sua_senha...">
-                        <a href="#">Mudar senha</a>
+                        <a href="#" id="mudar_senha">Mudar senha</a>
                 </div>
-                <div id="mudar_senha">
+                <div id="nova_senha">
                     <input type="password">
                     <div id="campo_senha">
-                        <a href="#" class="senha" id="nova_senha">Salvar Senha</a>
+                        <a href="#" class="senha" id="salvar_senha">Salvar Senha</a>
                         <a href="#" class="senha" id="cancelar_senha">Cancelar</a>
                     </div>
                 </div>
             </div>
             <div id="botoes_confirmar">
-                <a href="#">Confirmar Atualização</a>
-                <a href="#">Apagar Conta</a>
+                <a href="#" id="confirmar_atualizacao">Confirmar Atualização</a>
+                    <a href="#">Sair da conta</a>
+                    <a href="#">Apagar Conta</a>
+                    <a href="#">Cancelar Atualização</a>
             </div>
         </form>
     </div>
 
-
-
-
+    <!--ACERVOS DE LIVROS-->
     <div id="acervo">
-        <a href="#"><h1> Cadastre seu livro</h1></a>
+        <h1>Seus Livros
+            <div id="linha">
+
+            </div>
+        </h1>
+        <!--Slide-->
+        <article id="todo_slide">
+                <div class="slideshow-container">
+    
+                    <div class="Slides fade">
+                        <div class="imagens">
+                            <img src="/fotos/img1.jpg" class="imgSlide">
+                            <div class="texto">
+                                <h2 class="título">Sinopse</h2>
+                                <p class="parágrafo">A jovem e peculiar Louisa "Lou" Clark transita de emprego a emprego
+                                    para ajudar a sustentar
+                                    sua família. Entretanto, sua atitude alegre é testada quando se torna cuidadora de
+                                    Will Traynor.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="Slides fade">
+                        <div class="imagens">
+                            <img src="/fotos/img2.jpeg" class="imgSlide">
+                            <div class="texto">
+                                <h2 class="título">Sinopse</h2>
+                                <p class="parágrafo">Auggie Pullman é um garoto que nasceu com uma deformidade facial,
+                                    o que fez com que passasse por 27 cirurgias plásticas. Aos 10 anos, ele irá
+                                    frequentar uma escola regular,
+                                    como qualquer outra criança, pela primeira vez. No quinto ano, ele precisa se
+                                    esforçar para conseguir se
+                                    encaixar em sua nova realidade.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="Slides fade">
+                        <div class="imagens">
+                            <img src="/fotos/img3.jpg" class="imgSlide">
+                            <div class="texto">
+                                <h2 class="título">Sinopse</h2>
+                                <p class="parágrafo">Durante a Segunda Guerra Mundial, uma jovem garota chamada Liesel
+                                    Meminger sobrevive
+                                    fora de Munique através dos livros que ela rouba. Ajudada por seu pai adotivo, ela
+                                    aprende a ler e
+                                    partilhar livros com seus amigos, incluindo um homem judeu que vive na
+                                    clandestinidade em sua casa.
+                                    Enquanto não está lendo ou estudando, ela realiza algumas tarefas para a mãe e
+                                    brinca com o amigo Rudy.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+                </div>
+                <br>
+    
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+    
+                <script src="./script/home.js"></script>
+            </article>
+            <div id="cadastro_livro">
+                <a href="#">Cadastre um novo livro
+                        <i class="fas fa-share-square"></i>
+                </a>
+            </div>
     </div>
+     <script src="/script/perfil.js"></script>
 </body>
 </html>
