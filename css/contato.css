@@ -152,3 +152,15 @@ color: #76323F;
 {
     width: 200px;
 }
+
+/*----Rodapé*/
+footer ul
+{
+    display: flex;
+    flex-direction: row;
+    background: #D7CEC7;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+}
+
