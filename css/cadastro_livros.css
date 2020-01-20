@@ -119,3 +119,67 @@ input:focus{
 #pular{
     color: black;
 }
+
+/* CELULAR*/
+@media all and (min-width: 360px) and (max-width: 740px){
+#formcadastrolivro
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    text-align: center;
+    margin: 0px auto;
+
+}
+#cardcadastrolivro{
+    display: flex;
+    flex-direction: column;
+ 
+    background-color: #D7CEC7;
+    width: 340px;
+    height: 1150px;
+    align-items: center;
+    border-radius: 15px;
+    text-align: center;
+
+}
+#direita
+{
+    margin-left: 40px;
+    margin-top: 85px;
+    display: flex;
+    flex-direction: column;
+} 
+#btn
+{
+    margin-top: 0px;
+    cursor: pointer;
+    margin-left: 110px;
+}
+#esquerda
+{
+    margin-left: 20px;
+    margin-right: 35px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+} 
+}
+/* Tablet */
+@media all and (min-width: 768px) and (max-width: 1024px){
+    #cardcadastrolivro{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        background-color: #D7CEC7;
+        width: 768px;
+        height: 680px;
+        align-items: center;
+        border-radius: 15px;
+        text-align: center;
+    
+    }
+    
+}
