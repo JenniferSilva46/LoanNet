@@ -1,0 +1,165 @@
+body
+{
+   margin: 0;
+}
+
+ul 
+{
+    list-style: none;
+}
+
+a
+{
+   text-decoration: none;
+   color: #76323F;
+}
+
+/*----Menu*/
+.divHeader{
+    display: flex;
+    flex-direction: row;
+}
+
+.logoLOAN{
+  margin-top: 8px;
+  margin-left: 15px;
+}
+  
+.linkHeader{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 70%;
+}
+  
+.cadastro,
+.login{
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-bottom: 0;
+}
+  
+#menuprincipal ul{
+    list-style: none;
+    padding-left: 80px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #D7CEC7;
+}
+    
+.linkMenu{
+    display: block;
+    color: #76323F;
+    padding: 15px 30px;
+}
+
+.linkMenu:link,
+.cadastro:link, 
+.login:link{
+    text-decoration: none;
+    color: #76323F;
+}
+  
+.linMenu:visited,
+.cadastro:visited, 
+.login:visited{
+    color: #76323F;
+}
+   
+ #linkHome{
+    color:  #D7CEC7 ;
+    background-color: #76323F;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+  
+#busca{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1%;
+    margin-left: 20%;
+    padding-right: 3%;
+}
+  
+#txtBusca{
+    border: 1px solid #76323F;
+    border-radius: 5px;
+    height: 20px;
+}
+  
+#botao{
+    background-color: transparent;
+    border: none;
+    color: #76323F;
+    margin-bottom: 12px;
+}
+/* CONTATO */
+#card
+{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+#contatos
+{
+   background-color: #D7CEC7;
+   width: 30%;
+   height: 100%;
+   text-align-last: center;
+   margin: 5px 20px;
+   border-radius: 5px;
+}
+
+#contatos h1
+{
+    margin: 10px;
+}
+.form_contato
+{
+    margin: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form_contato p, a
+{
+    display: flex;
+    margin: 0px 2px;    
+}
+
+.form_contato a
+{
+    color: black;
+}
+
+.form_contato p, h1
+{
+color: #76323F;
+}
+
+.form_contato i
+{
+    margin: 0px 5px;
+}
+#card img
+{
+    width: 200px;
+}
+
+/*----Rodapé*/
+footer ul
+{
+    display: flex;
+    flex-direction: row;
+    background: #D7CEC7;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+}
+
