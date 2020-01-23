@@ -13,6 +13,7 @@ if(document.getElementById("bLogin") !== null){
 
     )
 }
+
 var cont=0;
 botao.onclick = function()
 {
@@ -40,7 +41,44 @@ botao.onclick = function()
         alert("Senha não compativel!");
         cont++;
     }
+    
     if(cont==0){
         alert("Cadastro realizado com sucesso! \n\n Faça seu login!");        
+            if(localStorage.qusuario==1){
+                user1();
+                localStorage.qusuario=Number(localStorage.qusuario)+1;
+            }else if(localStorage.qusuario==2){
+           user2();
+           localStorage.qusuario=Number(localStorage.qusuario)+1;
+       }else if(localStorage.qusuario==3){
+           //user3();
+           alert("Chamou sem")
+       }else{
+        localStorage.qusuario=1;
+       }
     }
+}
+function user1(){
+    dig_nome=document.getElementById("nome").value;
+    dig_email=document.getElementById("email").value;
+    dig_senha=document.getElementById("senha").value;
+    localStorage.nome=dig_nome;
+    localStorage.email=dig_email;
+    localStorage.senha=dig_senha;
+}
+function user2(){
+    let nome_user2=document.getElementById("nome").value;
+    let email_user2=document.getElementById("email").value;
+    let senha_user2=document.getElementById("senha").value;
+    localStorage.nome2=nome_user2;
+    localStorage.email2=email_user2;
+    localStorage.senha2=senha_user2;
+}
+
+
+
+if(typeof(Storage)!="undefined"){
+    
+}else{
+    alert("Sem suporte!");
 }
