@@ -1,5 +1,10 @@
 //Login
 var emailc;
+/*EM ANDAMENTO
+function redirecionar(){ 
+    document.getElementById("entrarhome").style.display='none';
+    document.getElementById("entrarhome").style.display='block';
+}*/
 if(document.getElementById("bLogin") !== null){
     document.getElementById("bLogin").addEventListener("click",
     function che(){
@@ -22,11 +27,10 @@ if(document.getElementById("bLogin") !== null){
     if(email_login==busuario1[0]&& senha_login==busuario1[1]){
         alert("Seja bem vindo novamente"+ " "+ busuario1[2]);
         window.location.href= "https://jennifersilva46.github.io/LoanNet/Telas/homePerfil.html"
-
+        redirecionar();
     }else if(email_login==busuario2[0]&& senha_login==busuario2[1]){
         alert("Seja bem vindo, novamente"+ " " + busuario2[2]);
         window.location.href= "https://jennifersilva46.github.io/LoanNet/Telas/homePerfil.html"
-
     }else if(email_login==busuario3[0]&& senha_login==busuario3[1]){
         alert("Seja bem vindo, novamente"+ " " + busuario3[2]);
         window.location.href= "https://jennifersilva46.github.io/LoanNet/Telas/homePerfil.html"
@@ -40,6 +44,7 @@ if(document.getElementById("bLogin") !== null){
     }}
 })
 }
+
 //Cadastro
 var cont=0;
 if(document.getElementById("botao") !== null){
